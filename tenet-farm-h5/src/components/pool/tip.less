@@ -1,0 +1,61 @@
+@import '../../styles/_variables.less';
+
+.MR {
+  position: relative;
+}
+
+.pool-info {
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: 2px solid #081724;
+  padding: 8px 16px;
+  width: 258px;
+  .pool-msg {
+    position: relative;
+    .icon {
+      position: absolute;
+      right: 0;
+      top: -16px;
+      transform: rotate(-45deg);
+      font-size: 18px;
+      color: #0081ff;
+    }
+  }
+}
+
+.pool-info-modal {
+  overflow: hidden;
+  border: 4 / @unit solid #081724;
+  padding-bottom: 0 !important;
+  border-radius: 12 / @unit;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 240 / @unit;
+    }
+    p {
+      color: #000000;
+      margin: 28 / @unit 0 40 / @unit;
+      font-size: 30 / @unit;
+    }
+    .btn-box {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      button,
+      a {
+        display: flex;
+        flex: 1;
+        cursor: pointer;
+        height: 100 / @unit;
+        font-size: 30 / @unit;
+        &:first-child {
+          margin-right: 22 / @unit;
+        }
+      }
+    }
+  }
+}

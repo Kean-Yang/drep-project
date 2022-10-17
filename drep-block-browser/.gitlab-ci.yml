@@ -1,0 +1,11 @@
+
+stages:
+- deploy
+job:
+  tags:
+    - dev
+  stage: deploy
+  script:
+  - npm i
+  - npm run build
+  - pm2 startOrReload pm2.json

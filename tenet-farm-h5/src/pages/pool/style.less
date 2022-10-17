@@ -1,0 +1,30 @@
+@import './_variables.less';
+@import './_reset.less';
+@import './_common.less';
+
+body {
+  font-size: 12 / @unit;
+}
+
+.btn-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52 / @unit;
+  background: #ffffff;
+  border-radius: 8 / @unit;
+  border: 4 / @unit solid #081724;
+  padding: 0 16 / @unit;
+  font-weight: 500;
+  font-size: 24 / @unit;
+  color: #000000;
+
+  white-space: nowrap;
+  &:hover {
+    color: #ffffff;
+    background: #000000;
+  }
+  &:focus {
+    outline: none;
+  }
+}

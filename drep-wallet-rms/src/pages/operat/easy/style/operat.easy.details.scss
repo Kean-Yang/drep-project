@@ -1,0 +1,23 @@
+.page-OperatEasyDetails {
+    text-align: left;
+
+    .page-conent {
+        padding: 0px 24px 24px 24px;
+    }
+
+    .draw-list {
+        overflow: hidden;
+        h4{
+            float: left;
+            color: rgba(0, 0, 0, 0.85);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 40px;
+        }
+        button {
+            float: right;
+            margin: 4px 4px;
+        }
+    }
+
+}

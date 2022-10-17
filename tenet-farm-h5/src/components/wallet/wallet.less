@@ -1,0 +1,35 @@
+@import '../../styles/_variables.less';
+
+.wallet-wrap {
+  bottom: 0;
+  top: auto;
+  .am-modal-content {
+    border-radius: 16 / @unit 16 / @unit 0 0;
+  }
+  .wallet-con {
+    display: flex;
+    padding: 40 / @unit 24 / @unit 24 / @unit;
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 120 / @unit;
+        padding: 0 38 / @unit;
+        background: #ffffff;
+        border-radius: 8 / @unit;
+        border: 2 / @unit solid #081724;
+        margin-bottom: 16 / @unit;
+        span {
+          font-size: 36 / @unit;
+        }
+        img {
+          width: 60 / @unit;
+        }
+      }
+    }
+  }
+}
